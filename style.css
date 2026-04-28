@@ -435,11 +435,82 @@ footer {
 }
 
 body.light-mode {
-  background: #fff;
+  color: #f4f7f6;
+  background: #050505;
+}
+
+body.light-mode .topbar {
+  color: #f4f7f6;
+  background: #050505;
+  border-bottom-color: #202020;
+}
+
+body.light-mode .main-nav a:hover,
+body.light-mode .brand:hover {
+  color: #45d6b5;
+}
+
+body.light-mode .top-actions button {
+  color: #f4f7f6;
+}
+
+body.light-mode .top-actions button:hover {
+  background: #181818;
 }
 
 body.light-mode .hero {
-  background: #0c5d4c;
+  color: #f4f7f6;
+  background: #000;
+}
+
+body.light-mode .mountain-one {
+  background: #111;
+}
+
+body.light-mode .mountain-two {
+  background: #171717;
+}
+
+body.light-mode .mountain-three {
+  background: #202020;
+}
+
+body.light-mode .section-band,
+body.light-mode .section-band.alt,
+body.light-mode .page-shell,
+body.light-mode footer {
+  color: #f4f7f6;
+  background: #050505;
+}
+
+body.light-mode .section-inner h2,
+body.light-mode .page-title,
+body.light-mode .card h3 {
+  color: #f4f7f6;
+}
+
+body.light-mode .card,
+body.light-mode .contact-item,
+body.light-mode .skill-cloud span {
+  color: #e9eeee;
+  background: #101010;
+  border-color: #2b2b2b;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+body.light-mode .card p,
+body.light-mode footer {
+  color: #c5cfcc;
+}
+
+body.light-mode .card a,
+body.light-mode .eyebrow {
+  color: #45d6b5;
+}
+
+body.light-mode .contact-item:hover {
+  border-color: #45d6b5;
+  box-shadow: 0 10px 24px rgba(69, 214, 181, 0.16);
 }
 
 @media (max-width: 900px) {
