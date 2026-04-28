@@ -577,10 +577,10 @@ body.light-mode .page-shell::before {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(120deg, transparent 0 46%, rgba(69, 214, 181, 0.17) 46.1% 46.25%, transparent 46.35% 100%),
+    linear-gradient(120deg, transparent 0 46%, rgba(69, 214, 181, 0.08) 46.1% 46.25%, transparent 46.35% 100%),
     linear-gradient(150deg, transparent 0 68%, rgba(255, 255, 255, 0.09) 68.1% 68.22%, transparent 68.32% 100%),
-    radial-gradient(circle at 78% 18%, rgba(69, 214, 181, 0.1), transparent 28%);
-  opacity: 0.78;
+    radial-gradient(circle at 78% 18%, rgba(69, 214, 181, 0.05), transparent 28%);
+  opacity: 0.56;
 }
 
 html[data-theme="black"] .section-band::after,
