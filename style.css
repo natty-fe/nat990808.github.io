@@ -176,6 +176,21 @@ a {
   font-weight: 700;
 }
 
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 18px 0 0;
+  padding: 7px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  color: #e9f7f3;
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 13px;
+  font-weight: 800;
+  text-shadow: none;
+}
+
 .social-row {
   display: flex;
   flex-wrap: wrap;
@@ -437,14 +452,20 @@ footer {
 html[data-theme="black"] body,
 body.light-mode {
   color: #f4f7f6;
-  background: #050505;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    #050505;
+  background-size: 32px 32px;
 }
 
 html[data-theme="black"] .topbar,
 body.light-mode .topbar {
   color: #f4f7f6;
-  background: #050505;
-  border-bottom-color: #202020;
+  background: rgba(5, 5, 5, 0.94);
+  border-bottom-color: rgba(69, 214, 181, 0.28);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.34);
+  backdrop-filter: blur(14px);
 }
 
 html[data-theme="black"] .main-nav a:hover,
@@ -467,7 +488,36 @@ body.light-mode .top-actions button:hover {
 html[data-theme="black"] .hero,
 body.light-mode .hero {
   color: #f4f7f6;
-  background: #000;
+  background:
+    linear-gradient(90deg, rgba(69, 214, 181, 0.08) 1px, transparent 1px),
+    linear-gradient(rgba(69, 214, 181, 0.06) 1px, transparent 1px),
+    radial-gradient(circle at 78% 22%, rgba(69, 214, 181, 0.12), transparent 30%),
+    #000;
+  background-size: 44px 44px, 44px 44px, auto, auto;
+}
+
+html[data-theme="black"] .hero::before,
+body.light-mode .hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, transparent 0 42%, rgba(69, 214, 181, 0.24) 42.1% 42.35%, transparent 42.45% 100%),
+    linear-gradient(150deg, transparent 0 62%, rgba(255, 255, 255, 0.12) 62.1% 62.25%, transparent 62.35% 100%);
+  opacity: 0.7;
+}
+
+html[data-theme="black"] .hero::after,
+body.light-mode .hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 8px);
+  opacity: 0.22;
 }
 
 html[data-theme="black"] .mountain,
@@ -499,7 +549,11 @@ body.light-mode .section-band.alt,
 body.light-mode .page-shell,
 body.light-mode footer {
   color: #f4f7f6;
-  background: #050505;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.022) 1px, transparent 1px),
+    #050505;
+  background-size: 34px 34px;
 }
 
 html[data-theme="black"] .section-inner h2,
@@ -518,9 +572,50 @@ body.light-mode .card,
 body.light-mode .contact-item,
 body.light-mode .skill-cloud span {
   color: #e9eeee;
-  background: #101010;
-  border-color: #2b2b2b;
+  background: linear-gradient(145deg, rgba(18, 18, 18, 0.96), rgba(8, 8, 8, 0.96));
+  border-color: rgba(69, 214, 181, 0.22);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+html[data-theme="black"] .card,
+body.light-mode .card {
+  position: relative;
+  overflow: hidden;
+}
+
+html[data-theme="black"] .card::before,
+body.light-mode .card::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 3px;
+  background: #45d6b5;
+}
+
+html[data-theme="black"] .profile-photo,
+body.light-mode .profile-photo {
+  border-color: #45d6b5;
+  box-shadow: 0 0 0 6px rgba(69, 214, 181, 0.08), 0 20px 44px rgba(0, 0, 0, 0.72);
+}
+
+html[data-theme="black"] .status-pill,
+body.light-mode .status-pill {
+  border-color: rgba(69, 214, 181, 0.48);
+  color: #dffcf6;
+  background: rgba(69, 214, 181, 0.12);
+}
+
+html[data-theme="black"] .cv-button,
+body.light-mode .cv-button {
+  border-color: rgba(69, 214, 181, 0.5);
+  color: #ecfffb;
+  background: #111;
+  box-shadow: 0 0 0 1px rgba(69, 214, 181, 0.08), 0 14px 32px rgba(0, 0, 0, 0.52);
+}
+
+html[data-theme="black"] .cv-button:hover,
+body.light-mode .cv-button:hover {
+  background: #151f1d;
 }
 
 html[data-theme="black"] .card p,
