@@ -629,7 +629,7 @@ body.light-mode .card::before {
   position: absolute;
   inset: 0 auto 0 0;
   width: 3px;
-  background: #45d6b5;
+  background: rgba(69, 214, 181, 0.28);
 }
 
 html[data-theme="black"] .profile-photo,
