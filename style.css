@@ -470,19 +470,24 @@ body.light-mode .hero {
   background: #000;
 }
 
+html[data-theme="black"] .mountain,
+body.light-mode .mountain {
+  opacity: 0;
+}
+
 html[data-theme="black"] .mountain-one,
 body.light-mode .mountain-one {
-  background: #111;
+  background: #000;
 }
 
 html[data-theme="black"] .mountain-two,
 body.light-mode .mountain-two {
-  background: #171717;
+  background: #000;
 }
 
 html[data-theme="black"] .mountain-three,
 body.light-mode .mountain-three {
-  background: #202020;
+  background: #000;
 }
 
 html[data-theme="black"] .section-band,
