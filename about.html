@@ -3,64 +3,56 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>About — Nathan Feyisa</title>
+  <title>Experience - Nathan Feyisa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="logo">
-        <img src="images/image.jpg" alt="Nathan photo">
-        <div>
-          <div style="font-size:14px; color:var(--muted)">Nathan Feyisa</div>
-          <div style="font-weight:700; font-size:18px">Computer Science Student</div>
-        </div>
+  <header class="topbar">
+    <a class="brand" href="index.html">Nathan Feyisa</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#bio">Bio</a>
+      <a href="about.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button type="button" aria-label="Search">&#8981;</button>
+      <button type="button" id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <h1 class="page-title">Experience</h1>
+    <section class="profile" aria-label="Nathan Feyisa profile">
+      <img src="images/image.jpg" alt="Nathan Feyisa profile photo">
+      <div class="cards">
+        <article class="card">
+          <h3>Software Developer</h3>
+          <p>Built small applications and web projects using Java, HTML, CSS, JavaScript, SQLite, MySQL, JavaFX, and Android Studio.</p>
+        </article>
+        <article class="card">
+          <h3>Education</h3>
+          <p><strong>Studied at American College of Technology up to 2024/25.</strong></p>
+          <p>Completed Networking Basics through Cisco Networking Academy.</p>
+        </article>
+        <article class="card">
+          <h3>Focus Areas</h3>
+          <p>Software development, UI/UX, databases, networking, and practical web interfaces for real users.</p>
+        </article>
+        <article class="card">
+          <h3>Certificates & CV</h3>
+          <p><a href="images/certificate.jpg" target="_blank">View certificate</a></p>
+          <p><a href="images/Nathan Cv.pdf" target="_blank">Download CV</a></p>
+        </article>
       </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+    </section>
+  </main>
 
-    <main>
-      <section aria-labelledby="about-heading" class="section">
-        <h2 id="about-heading">About Me</h2>
-        <div class="profile">
-          <img src="images/image.jpg" alt="Nathan profile photo">
-          <div>
-            <h3>Nathan Feyisa</h3>
-            <p><strong>Education:</strong> Bachelor of Science in Computer Science — American College of Technology (In Progress)</p>
-            <p><strong>Background:</strong> Interested in software development, UI/UX, and networking. I enjoy building small applications and learning new systems.</p>
-            <p><strong>Technical Skills:</strong> Java, HTML, CSS, JavaScript, SQLite, MySQL, JavaFX, Android Studio</p>
-            <p>Email Me:  <a href="mailto:nathanfeyia6@gmail.com">nahanfeyisa6@gmail.com</a> </p>
-            <p>Call:  <a href="tell:+251921990808">+251921990808</a></p>
-          </div>
-        </div>
-      </section>
+  <footer>
+    <p>&copy; 2025 Nathan Feyisa</p>
+  </footer>
 
-      <section class="section" aria-labelledby="extra-heading">
-        <h2 id="extra-heading">Certificates & CV</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Networking Basics — Cisco</h3>
-            <p>Completion certificate in Networking Basics (Cisco Networking Academy).</p>
-            <a href="images/certificate.jpg" target="_blank">View certificate</a>
-          </div>
-          <div class="card">
-            <h3>Curriculum Vitae</h3>
-            <p>Download a PDF of my CV.</p>
-            <a href="images/Nathan Cv.pdf" target="_blank">My CV (PDF)</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2025 Nathan Feyisa</p>
-    </footer>
-  </div>
-
+  <script src="script.js"></script>
 </body>
 </html>

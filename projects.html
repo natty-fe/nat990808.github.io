@@ -3,68 +3,62 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Projects — Nathan Feyisa</title>
+  <title>Projects - Nathan Feyisa</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header">
-      <div class="logo">
-        <img src="images/image.jpg" alt="profile">
-        <div>
-          <div style="font-size:14px; color:var(--muted)">Nathan Feyisa</div>
-          <div style="font-weight:700; font-size:18px">Computer Science Student</div>
-        </div>
-      </div>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html" >Contact</a>
-      </nav>
-    </header>
+  <header class="topbar">
+    <a class="brand" href="index.html">Nathan Feyisa</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="index.html#bio">Bio</a>
+      <a href="about.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="index.html#education">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button type="button" aria-label="Search">&#8981;</button>
+      <button type="button" id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+    </div>
+  </header>
 
-    <main>
-      <section class="section" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
-        <div class="cards">
-          <article class="card" id="cipher">
-            <h3>Cipher Text Converter</h3>
-            <p>A small tool that converts normal text into several cipher forms — a learning project about encryption and string handling.</p>
-            <p>Tech: Java</p>
-            <a href="https://github.com/nat990808" target="_blank">View on GitHub</a>
-          </article>
+  <main class="page-shell">
+    <h1 class="page-title">Projects</h1>
+    <section class="cards" aria-label="Project list">
+      <article class="card" id="cipher">
+        <h3>Cipher Text Converter</h3>
+        <p>A Java tool that converts normal text into cipher forms while practicing encryption concepts and string handling.</p>
+        <p>Tech: Java</p>
+        <a href="https://github.com/natty-fe" target="_blank">View on GitHub</a>
+      </article>
 
-          <article class="card" id="image-recovery">
-            <h3>Image Recovery Program</h3>
-            <p>A CS50x-style forensics program that recovers deleted JPEG images from memory dumps. Built while practicing low-level file I/O.</p>
-            <p>Tech: C, Forensics</p>
-            <a href="https://github.com/nat990808" target="_blank">View on GitHub</a>
-          </article>
+      <article class="card" id="image-recovery">
+        <h3>Image Recovery Program</h3>
+        <p>A forensics practice program that recovers deleted JPEG images from memory dumps using low-level file I/O.</p>
+        <p>Tech: C, Forensics</p>
+        <a href="https://github.com/natty-fe" target="_blank">View on GitHub</a>
+      </article>
 
-          <article class="card" id="gulit">
-            <h3>GulitApp</h3>
-            <p>Java GUI + database application to manage vegetable prices. Has a client view and a password-protected admin view where prices (now &amp; before) can be updated in Amharic and English.</p>
-            <p>Tech: JavaFX, SQLite</p>
-            <a href="images/Gulit screenshoot.pdf" target="_blank">Screenshoots</a>
-          </article>
+      <article class="card" id="gulit">
+        <h3>GulitApp</h3>
+        <p>Java GUI and database application for managing vegetable prices with client and admin views.</p>
+        <p>Tech: JavaFX, SQLite</p>
+        <a href="images/Gulit screenshoot.pdf" target="_blank">Screenshots</a>
+      </article>
 
-          <article class="card" id="freelance">
-            <h3>Freelance Web Designs</h3>
-            <p>Several responsive websites created for local businesses in Addis Ababa, focused on clean UI and mobile-first layouts.</p>
-            <p>Tech: HTML, CSS</p>
-            <a href="https://github.com/nat990808" target="_blank">Examples & repos</a>
-          </article>
-        </div>
-      </section>
-    </main>
+      <article class="card" id="freelance">
+        <h3>Freelance Web Designs</h3>
+        <p>Responsive websites for local businesses in Addis Ababa, focused on clean UI and mobile-first layouts.</p>
+        <p>Tech: HTML, CSS</p>
+        <a href="https://github.com/natty-fe" target="_blank">Examples and repos</a>
+      </article>
+    </section>
+  </main>
 
-    <footer>
-      <p>© 2025 Nathan Feyisa </p>
-    </footer>
-  </div>
-  
+  <footer>
+    <p>&copy; 2025 Nathan Feyisa</p>
+  </footer>
 
-
+  <script src="script.js"></script>
 </body>
 </html>

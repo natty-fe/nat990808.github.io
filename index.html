@@ -3,66 +3,104 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nathan Feyisa — Portfolio</title>
+  <title>Nathan Feyisa - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="site-header" role="banner">
-      <div class="logo">
-        <img src="images/image.jpg" alt="Nathan Feyisa photo">
-        <div>
-          <div style="font-size:14px; color:var(--muted)">Nathan Feyisa</div>
-          <div style="font-weight:700; font-size:18px">Computer Science Student</div>
+  <header class="topbar">
+    <a class="brand" href="index.html">Nathan Feyisa</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#bio">Bio</a>
+      <a href="about.html">Experience</a>
+      <a href="projects.html">Projects</a>
+      <a href="#education">Education</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button type="button" aria-label="Search">&#8981;</button>
+      <button type="button" id="themeToggle" aria-label="Toggle theme">&#9790;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="bio">
+      <div class="mountain mountain-one"></div>
+      <div class="mountain mountain-two"></div>
+      <div class="mountain mountain-three"></div>
+
+      <aside class="profile-card" aria-label="Profile summary">
+        <img class="profile-photo" src="images/image.jpg" alt="Nathan Feyisa photo">
+        <h1>Nathan Feyisa</h1>
+        <p class="headline">Software Developer</p>
+        <p class="org">Portfolio</p>
+        <div class="social-row" aria-label="Social links">
+          <a href="mailto:nathanfeyisa6@gmail.com" aria-label="Email">@</a>
+          <a href="https://t.me/abiinatt" target="_blank" aria-label="Telegram">T</a>
+          <a href="https://github.com/natty-fe" target="_blank" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/natan-feyisa-04121b390/" target="_blank" aria-label="LinkedIn">in</a>
+        </div>
+      </aside>
+
+      <div class="hero-copy">
+        <section class="about-block">
+          <h2>About Me</h2>
+          <p>Nathan Feyisa is a software developer focused on Java, web development, databases, and practical user interfaces. He builds small applications and web projects with an emphasis on clean structure, clear navigation, and useful features.</p>
+          <a class="cv-button" href="images/Nathan Cv.pdf" target="_blank">Download CV</a>
+        </section>
+
+        <div class="info-grid">
+          <section class="info-block">
+            <h2>Interests</h2>
+            <ul>
+              <li>Web Development</li>
+              <li>Java Applications</li>
+              <li>Databases</li>
+              <li>Networking</li>
+            </ul>
+          </section>
+
+          <section class="info-block education" id="education">
+            <h2>Education</h2>
+            <div class="education-item">
+              <span class="edu-icon" aria-hidden="true">&#9962;</span>
+              <div>
+                <h3>Studied at American College of Technology up to 2024/25</h3>
+                <p>American College of Technology</p>
+              </div>
+            </div>
+            <div class="education-item">
+              <span class="edu-icon" aria-hidden="true">&#9962;</span>
+              <div>
+                <h3>Networking Basics</h3>
+                <p>Cisco Networking Academy</p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
-      <nav role="navigation" aria-label="Main navigation" >
-        <a href="index.html" class="btnn">Home</a>
-        <a href="about.html" class="btnn">About</a>
-        <a href="projects.html" class="btnn">Projects</a>
-        <a href="contact.html" class="btnn">Contact</a>
-      </nav>
-    </header>
+    </section>
 
-    <main role="main">
-      <section class="hero" aria-labelledby="intro-heading">
-        <div class="intro">
-          <h1 id="intro-heading" class="name">Hi, I'm Nathan Feyisa</h1>
-          <p class="lead">A Computer Science student skilled in Java, web development, and databases. I build small apps and web projects with an emphasis on clarity and usability.</p>
-          <p style="margin-top:12px" class="btn">
-            <a class="btn" href="images/Nathan Cv.pdf" style="color:var(--light); text-decoration:underline" class="btnn">Download CV</a>
-            &nbsp;·&nbsp;
-            <a class="btn" href="images/certificate.jpg" style="color:var(--light); text-decoration:underline" class="btnn">See Certificate</a>
-          </p>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
+    <section class="section-band" id="experience">
+      <div class="section-inner">
+        <h2>Experience</h2>
         <div class="cards">
-          <div class="card skill"><strong>Java</strong>
-            <div class="progress"><i style="width:75%"></i></div>
-          </div>
-          <div class="card skill"><strong>HTML &amp; CSS</strong>
-            <div class="progress"><i style="width:80%"></i></div>
-          </div>
-          <div class="card skill"><strong>Databases (SQLite, MySQL)</strong>
-            <div class="progress"><i style="width:65%"></i></div>
-          </div>
-          <div class="card skill"><strong>Networking (Cisco)</strong>
-            <div class="progress"><i style="width:60%"></i></div>
-          </div>
+          <article class="card">
+            <h3>Software Development Projects</h3>
+            <p>Built Java, HTML, CSS, JavaScript, and database projects, including apps for ciphers, image recovery practice, and local business websites.</p>
+          </article>
+          <article class="card">
+            <h3>Technical Skills</h3>
+            <p>Java, HTML, CSS, JavaScript, SQLite, MySQL, JavaFX, Android Studio, and Cisco networking fundamentals.</p>
+          </article>
         </div>
-      
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer role="contentinfo">
-      <p>© 2025 Nathan Feyisa </p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 Nathan Feyisa</p>
+  </footer>
 
   <script src="script.js"></script>
-
-
 </body>
 </html>
