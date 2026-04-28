@@ -434,47 +434,61 @@ footer {
   background: #f6f8f7;
 }
 
+html[data-theme="black"] body,
 body.light-mode {
   color: #f4f7f6;
   background: #050505;
 }
 
+html[data-theme="black"] .topbar,
 body.light-mode .topbar {
   color: #f4f7f6;
   background: #050505;
   border-bottom-color: #202020;
 }
 
+html[data-theme="black"] .main-nav a:hover,
+html[data-theme="black"] .brand:hover,
 body.light-mode .main-nav a:hover,
 body.light-mode .brand:hover {
   color: #45d6b5;
 }
 
+html[data-theme="black"] .top-actions button,
 body.light-mode .top-actions button {
   color: #f4f7f6;
 }
 
+html[data-theme="black"] .top-actions button:hover,
 body.light-mode .top-actions button:hover {
   background: #181818;
 }
 
+html[data-theme="black"] .hero,
 body.light-mode .hero {
   color: #f4f7f6;
   background: #000;
 }
 
+html[data-theme="black"] .mountain-one,
 body.light-mode .mountain-one {
   background: #111;
 }
 
+html[data-theme="black"] .mountain-two,
 body.light-mode .mountain-two {
   background: #171717;
 }
 
+html[data-theme="black"] .mountain-three,
 body.light-mode .mountain-three {
   background: #202020;
 }
 
+html[data-theme="black"] .section-band,
+html[data-theme="black"] .section-band.alt,
+html[data-theme="black"] .page-shell,
+html[data-theme="black"] footer,
 body.light-mode .section-band,
 body.light-mode .section-band.alt,
 body.light-mode .page-shell,
@@ -483,12 +497,18 @@ body.light-mode footer {
   background: #050505;
 }
 
+html[data-theme="black"] .section-inner h2,
+html[data-theme="black"] .page-title,
+html[data-theme="black"] .card h3,
 body.light-mode .section-inner h2,
 body.light-mode .page-title,
 body.light-mode .card h3 {
   color: #f4f7f6;
 }
 
+html[data-theme="black"] .card,
+html[data-theme="black"] .contact-item,
+html[data-theme="black"] .skill-cloud span,
 body.light-mode .card,
 body.light-mode .contact-item,
 body.light-mode .skill-cloud span {
@@ -498,16 +518,21 @@ body.light-mode .skill-cloud span {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.42);
 }
 
+html[data-theme="black"] .card p,
+html[data-theme="black"] footer,
 body.light-mode .card p,
 body.light-mode footer {
   color: #c5cfcc;
 }
 
+html[data-theme="black"] .card a,
+html[data-theme="black"] .eyebrow,
 body.light-mode .card a,
 body.light-mode .eyebrow {
   color: #45d6b5;
 }
 
+html[data-theme="black"] .contact-item:hover,
 body.light-mode .contact-item:hover {
   border-color: #45d6b5;
   box-shadow: 0 10px 24px rgba(69, 214, 181, 0.16);
