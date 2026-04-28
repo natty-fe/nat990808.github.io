@@ -430,6 +430,40 @@ a {
   margin: 0 auto;
 }
 
+.education-page {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.education-feature {
+  min-height: 0;
+}
+
+.education-feature h2 {
+  margin: 0 0 12px;
+  color: #12382f;
+  font-size: 24px;
+  line-height: 1.2;
+}
+
+.certificate-link {
+  display: block;
+  margin-top: 18px;
+}
+
+.certificate-link img {
+  display: block;
+  width: 100%;
+  border: 1px solid #dce5e1;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(23, 55, 46, 0.12);
+}
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -703,9 +737,11 @@ body.light-mode .page-shell::after {
 
 html[data-theme="black"] .section-inner h2,
 html[data-theme="black"] .page-title,
+html[data-theme="black"] .education-feature h2,
 html[data-theme="black"] .card h3,
 body.light-mode .section-inner h2,
 body.light-mode .page-title,
+body.light-mode .education-feature h2,
 body.light-mode .card h3 {
   color: #f4f7f6;
 }
@@ -781,6 +817,12 @@ html[data-theme="black"] .contact-item:hover,
 body.light-mode .contact-item:hover {
   border-color: #45d6b5;
   box-shadow: 0 10px 24px rgba(69, 214, 181, 0.16);
+}
+
+html[data-theme="black"] .certificate-link img,
+body.light-mode .certificate-link img {
+  border-color: rgba(69, 214, 181, 0.22);
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.5);
 }
 
 html[data-theme="black"] .search-overlay,

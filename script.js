@@ -29,9 +29,9 @@ const searchItems = [
   },
   {
     title: 'Education',
-    description: 'BSc Software Engineering at American College of Technology.',
-    href: 'index.html#education',
-    keywords: 'education degree bsc software engineering american college technology gpa'
+    description: 'American College of Technology, Cisco Networking Basics, and CS50x course work.',
+    href: 'education.html',
+    keywords: 'education degree bachelor computer science american college technology cisco networking basics certificate cs50x cipher image recovery'
   },
   {
     title: 'Experience',
