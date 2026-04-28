@@ -500,9 +500,9 @@ html[data-theme="black"] .hero,
 body.light-mode .hero {
   color: #f4f7f6;
   background:
-    linear-gradient(90deg, rgba(69, 214, 181, 0.08) 1px, transparent 1px),
-    linear-gradient(rgba(69, 214, 181, 0.06) 1px, transparent 1px),
-    radial-gradient(circle at 78% 22%, rgba(69, 214, 181, 0.12), transparent 30%),
+    linear-gradient(90deg, rgba(69, 214, 181, 0.025) 1px, transparent 1px),
+    linear-gradient(rgba(69, 214, 181, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 78% 22%, rgba(69, 214, 181, 0.05), transparent 30%),
     #000;
   background-size: 44px 44px, 44px 44px, auto, auto;
 }
@@ -515,9 +515,9 @@ body.light-mode .hero::before {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(120deg, transparent 0 42%, rgba(69, 214, 181, 0.24) 42.1% 42.35%, transparent 42.45% 100%),
-    linear-gradient(150deg, transparent 0 62%, rgba(255, 255, 255, 0.12) 62.1% 62.25%, transparent 62.35% 100%);
-  opacity: 0.7;
+    linear-gradient(120deg, transparent 0 42%, rgba(69, 214, 181, 0.08) 42.1% 42.35%, transparent 42.45% 100%),
+    linear-gradient(150deg, transparent 0 62%, rgba(255, 255, 255, 0.06) 62.1% 62.25%, transparent 62.35% 100%);
+  opacity: 0.52;
 }
 
 html[data-theme="black"] .hero::after,
@@ -634,15 +634,15 @@ body.light-mode .card::before {
 
 html[data-theme="black"] .profile-photo,
 body.light-mode .profile-photo {
-  border-color: #45d6b5;
-  box-shadow: 0 0 0 6px rgba(69, 214, 181, 0.08), 0 20px 44px rgba(0, 0, 0, 0.72);
+  border-color: rgba(69, 214, 181, 0.36);
+  box-shadow: 0 0 0 6px rgba(69, 214, 181, 0.035), 0 20px 44px rgba(0, 0, 0, 0.72);
 }
 
 html[data-theme="black"] .status-pill,
 body.light-mode .status-pill {
-  border-color: rgba(69, 214, 181, 0.48);
+  border-color: rgba(69, 214, 181, 0.28);
   color: #dffcf6;
-  background: rgba(69, 214, 181, 0.12);
+  background: rgba(69, 214, 181, 0.06);
 }
 
 html[data-theme="black"] .cv-button,
